@@ -7,7 +7,7 @@ go
 -- Tạo bảng và khóa chính
 create table KhachHang
 (
-	MaKH char(6),
+	MaKH char(8),
 	Ho nvarchar(10),
 	Ten nvarchar(50),
 	NgSinh datetime,
@@ -22,31 +22,31 @@ create table KhachHang
 
 create table HoaDon
 (
-	MaHD char(6),
-	MaKH char(6),
+	MaHD char(8),
+	MaKH char(8),
 	NgayLap datetime,
-	TongTien float,
+	TongTien int,
 	constraint PK_HD primary key (MaHD)
 )
 
 create table CT_HoaDon
 (
-	MaHD char(6),
-	MaSP char(5),
+	MaHD char(8),
+	MaSP char(7),
 	SoLuong int,
-	GiaBan float,
-	GiaGiam float,
-	ThanhTien float,
+	GiaBan int,
+	GiaGiam int,
+	ThanhTien int,
 	constraint PK_CTHD primary key (MaHD, MaSP)
 )
 
 create table SanPham
 (
-	MaSP char(5),
+	MaSP char(7),
 	TenSP nvarchar(50),
 	SoLuongTon int,
 	MoTa nvarchar(30),
-	Gia float,
+	Gia int,
 	constraint PK_SP primary key (MaSP)
 )
 
