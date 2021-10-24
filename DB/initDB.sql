@@ -7,15 +7,15 @@ go
 -- Tạo bảng và khóa chính
 create table KhachHang
 (
-	MaKH char(8),
-	Ho nvarchar(10),
-	Ten nvarchar(50),
+	MaKH char(7),
+	Ho nvarchar(15),
+	Ten nvarchar(10),
 	NgSinh datetime,
-	SoNha nvarchar(30),
+	SoNha varchar(15),
 	Duong nvarchar(30),
 	Phuong nvarchar(30),
-	Quan nvarchar(30),
-	ThanhPho nvarchar(30),
+	Quan nvarchar(20),
+	ThanhPho nvarchar(20),
 	DienThoai char(10), 
 	constraint PK_KH primary key (MaKH)
 )
