@@ -1,7 +1,7 @@
 ﻿create database QLHoaDon
+go
 
 use QLHoaDon
-
 go
 
 -- Tạo bảng và khóa chính
