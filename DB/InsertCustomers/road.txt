@@ -1,0 +1,170 @@
+Lê Duẩn,Phường Bến Nghé,Quận 1
+Nguyễn Du,Phường Bến Nghé,Quận 1
+Tôn Đức Thắng,Phường Bến Nghé,Quận 1
+Đồng Khởi,Phường Bến Nghé,Quận 1
+Hàm Nghi,Phường Bến Nghé,Quận 1
+Lý Tự Trọng,Phường Bến Thành,Quận 1
+Lê Thánh Tôn,Phường Bến Thành,Quận 1
+Bùi Thị Xuân,Phường Bến Thành,Quận 1
+Nguyễn Trãi,Phường Bến Thành,Quận 1
+CMT8,Phường Bến Thành,Quận 1
+Cô Giang,Phường Cầu Ông Lãnh,Quận 1
+Cô Bắc,Phường Cầu Ông Lãnh,Quận 1
+Nguyễn Thái Học,Phường Cầu Ông Lãnh,Quận 1
+Yersin,Phường Cầu Ông Lãnh,Quận 1
+Nguyễn Công Trứ,Phường Cầu Ông Lãnh,Quận 1
+Hai Bà Trưng,Phường Đa Kao,Quận 1
+Điện Biên Phủ,Phường Đa Kao,Quận 1
+Đinh Tiên Hoàng,Phường Đa Kao,Quận 1
+Mạc Đĩnh Chi,Phường Đa Kao,Quận 1
+Nguyễn Đình Chiểu,Phường Đa Kao,Quận 1
+Lê Lai,Phường Phạm Ngũ Lão,Quận 1
+Phạm Ngũ Lão,Phường Phạm Ngũ Lão,Quận 1
+Bùi Viện,Phường Phạm Ngũ Lão,Quận 1
+Đỗ Quang Đấu,Phường Phạm Ngũ Lão,Quận 1
+Cống Quỳnh,Phường Phạm Ngũ Lão,Quận 1
+D5,Phường An Phú,Quận 2
+D17,Phường An Phú,Quận 2
+D19,Phường An Phú,Quận 2
+D26,Phường An Phú,Quận 2
+D20,Phường An Phú,Quận 2
+Quốc Hương,Phường Thảo Điền,Quận 2
+Nguyễn Văn Hưởng,Phường Thảo Điền,Quận 2
+Ngô Quang Huy,Phường Thảo Điền,Quận 2
+Xuân Thủy,Phường Thảo Điền,Quận 2
+Song Hành,Phường Thảo Điền,Quận 2
+Trần Văn Đang,Phường 09,Quận 3
+Hoàng Sa,Phường 09,Quận 3
+Nguyễn Thông,Phường 09,Quận 3
+Trương Định,Phường 09,Quận 3
+Kỳ Đồng,Phường 09,Quận 3
+Hoàng Sa,Phường 11,Quận 3
+CMT8,Phường 11,Quận 3
+Trần Văn Đang,Phường 11,Quận 3
+Nguyễn Phúc Nguyên,Phường 10,Quận 3
+CMT8,Phường 10,Quận 3
+Trường Sa,Phường 12,Quận 3
+Lê Văn Sĩ,Phường 12,Quận 3
+Lý Chính Thắng,Phường 08,Quận 3
+Pasteur,Phường 08,Quận 3
+Trần Quốc Toản,Phường 08,Quận 3
+Hoàng Diệu,Phường 12,Quận 4
+Tôn Đản,Phường 10,Quận 4
+Đoàn Văn Bơ,Phường 14,Quận 4
+Xóm Chiếu,Phường 14,Quận 4
+Tôn Thất Thuyết,Phường 15,Quận 4
+Tân Thành,Phường 14,Quận 5
+Phạm Hữu Chí,Phường 14,Quận 5
+Phú Giáo,Phường 14,Quận 5
+Phú Hữu,Phường 14,Quận 5
+Trần Chánh Chiếu,Phường 14,Quận 5
+Nguyễn Văn Cừ,Phường 04,Quận 5
+Trần Phú,Phường 04,Quận 5
+Hùng Vương,Phường 04,Quận 5
+An Dương Vương,Phường 04,Quận 5
+Lê Hồng Phong,Phường 04,Quận 5
+Trần Phú,Phường 07,Quận 5
+Huỳnh Mẫn Đạt,Phường 07,Quận 5
+Phan Văn Trị,Phường 07,Quận 5
+Trần Hưng Đạo,Phường 07,Quận 5
+Bùi Hữu Nghĩa,Phường 07,Quận 5
+Bà Hom,Phường 13,Quận 6
+Lê Tuấn Mậu,Phường 13,Quận 6
+Kinh Dương Vương,Phường 13,Quận 6
+Đường Số 11,Phường 13,Quận 6
+Đường Số 2,Phường 13,Quận 6
+Lò Gốm,Phường 08,Quận 6
+Phạm Văn Chí,Phường 08,Quận 6
+Bình Phú,Phường 11,Quận 6
+Đường Số 10,Phường 11,Quận 6
+Nguyễn Văn Luông,Phường 12,Quận 6
+Trần Xuân Soạn,Phường Tân Thuận Tây,Quận 7
+Nguyễn Thị Thập,Phường Tân Quy,Quận 7
+Nguyễn Văn Linh, Phường Tân Phong,Quận 7
+Phạm Thế Hiển,Phường 03,Quận 7
+Đường Số 9A,Phường 1,Quận 7
+Đường 3/2,Phường 06,Quận 10
+Nhật Tảo,Phường 06,Quận 10
+Đào Duy Từ,Phường 06,Quận 10
+Lý Thái Tổ,Phường 09,Quận 10
+Bà Hạt,Phường 09,Quận 10
+Hồ Thị Kỷ,Phường 02,Quận 10
+Hòa Hảo,Phường 02,Quận 10
+Sư Vạn Hạnh,Phường 10,Quận 10
+Thành Thái,Phường 10,Quận 10
+Cao Thắng,Phường 11,Quận 10
+Tống Văn Trân,Phường 05,Quận 11
+Hòa Bình,Phường 03,Quận 11
+Lạc Long Quân,Phường 01,Quận 11
+Tạ Uyên,Phường 06,Quận 11
+Bình Thới,Phường 11,Quận 11
+Tô Ký,Phường Trung Mỹ Tây,Quận 12
+Nguyễn Ảnh Thủ,Phường Trung Mỹ Tây,Quận 12
+Nguyễn Văn Quá,Phường Tân Hưng Thuận,Quận 12
+Trường Chinh,Phường Tân Thới Nhất,Quận 12
+Nguyễn Thị Đặng,Phường Tân Thới Hiệp,Quận 12
+Đường Số 7,Phường Bình Trị Đông B,Quận Bình Tân
+Mã Lò,Phường Phường Bình Trị Đông A,Quận Bình Tân
+Võ Văn Kiệt,Phường An Lạc,Quận Bình Tân
+Kinh Dương Vương,Phường An Lạc,Quận Bình Tân
+Bùi Tư Toàn,Phường An Lạc,Quận Bình Tân
+Bình Quới,Phường 28,Quận Bình Thạnh
+Nguyễn Xí,Phường 26,Quận Bình Thạnh
+Phan Văn Trị,Phường 11,Quận Bình Thạnh
+Hoàng Hoa Thám,Phường 07,Quận Bình Thạnh
+Lê Trực,Phường 07,Quận Bình Thạnh
+Phan Huy Ích,Phường 12,Quận Gò Vấp
+Quang Trung,Phường 12,Quận Gò Vấp
+Phạm Văn Chiêu,Phường 08,Quận Gò Vấp
+Lê Đức Thọ,Phường 17,Quận Gò Vấp
+Nguyễn Oanh,Phường 17,Quận Gò Vấp
+Lê Văn Sĩ,Phường 13,Quận Phú Nhuận
+Lê Văn Sĩ,Phường 14,Quận Phú Nhuận
+Trần Huy Liệu,Phường 15,Quận Phú Nhuận
+Đào Duy Anh,Phường 09,Quận Phú Nhuận
+Thích Quảng Đức,Phường 04,Quận Phú Nhuận
+Trần Văn Quang,Phường 10,Quận Tân Bình
+Âu Cơ,Phường 10,Quận Tân Bình
+Lạc Long Quân,Phường 10,Quận Tân Bình
+Ni Sư Huỳnh Liên,Phường 10,Quận Tân Bình
+Thái Thị Nhạn,Phường 10,Quận Tân Bình
+Bàu Cát 1,Phường 14,Quận Tân Bình
+Bàu Cát 2,Phường 14,Quận Tân Bình
+Bàu Cát 3,Phường 14,Quận Tân Bình
+Bàu Cát 4,Phường 14,Quận Tân Bình
+Đồng Đen,Phường 14,Quận Tân Bình
+Cộng Hòa,Phường 13,Quận Tân Bình
+Phan Văn Sửu,Phường 13,Quận Tân Bình
+Nguyễn Đức Thuận,Phường 13,Quận Tân Bình
+Trường Sơn,Phường 02,Quận Tân Bình
+Cửu Long,Phường 02,Quận Tân Bình
+Dương Văn Dương,Phường Tân Quý,Quận Tân Phú
+Gò Dầu,Phường Tân Quý,Quận Tân Phú
+Tân Quý,Phường Tân Quý,Quận Tân Phú
+Tân Sơn Nhì,Phường Tân Sơn Nhì,Quận Tân Phú
+Diệp Minh Châu,Phường Tân Sơn Nhì,Quận Tân Phú
+Trần Văn Ơn,Phường Tân Sơn Nhì,Quận Tân Phú
+Tây Thạnh,Phường Tây Thạnh,Quận Tân Phú
+Lê Trọng Tấn,Phường Tây Thạnh,Quận Tân Phú
+Nguyễn Hữu Tiến,Phường Tây Thạnh,Quận Tân Phú
+Chế Lan Viên,Phường Tây Thạnh,Quận Tân Phú
+Đường Số 11,Phường Linh Trung,Quận Thủ Đức
+Đường Số 13,Phường Linh Trung,Quận Thủ Đức
+Đường Số 13,Phường Linh Trung,Quận Thủ Đức
+Linh Trung,Phường Linh Trung,Quận Thủ Đức
+Hoàng Diệu,Phường Linh Trung,Quận Thủ Đức
+Đường Số 6,Phường Linh Xuân,Quận Thủ Đức
+Đường Số 8,Phường Linh Xuân,Quận Thủ Đức
+Thống Nhất,Phường Dĩ An,Quận Thủ Đức
+Đường Số 10,Phường Dĩ An,Quận Thủ Đức
+Đường Số 21,Phường Dĩ An,Quận Thủ Đức
+Đình Bình Trường,Xã Bình Chánh,Huyện Bình Chánh
+Rạch Ông Đồ,Xã Bình Chánh,Huyện Bình Chánh
+Kinh A,Xã Lê Minh Xuân,Huyện Bình Chánh
+Lê Đình Chi,Xã Lê Minh Xuân,Huyện Bình Chánh
+Trần Đại Nghĩa,Xã Lê Minh Xuân,Huyện Bình Chánh
+Ngyễn Ảnh Thủ,Xã Bà Điểm,Huyện Hóc Môn
+Phan Văn Đối,Xã Bà Điểm,Huyện Hóc Môn
+Phan Văn Hớn,Xã Bà Điểm,Huyện Hóc Môn
+Song Hành,Xã Tân Hiệp,Huyện Hóc Môn
+Lê Lợi,Xã Tân Hiệp,Huyện Hóc Môn
