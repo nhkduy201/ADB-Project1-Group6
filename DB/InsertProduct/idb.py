@@ -49,11 +49,17 @@ def get_des():
     return lr.sentence()[:30]
 
 
-for i in range(0, 10000):
+nop = 10000
+empty_des = nop // 3
+
+for i in range(0, nop):
     iden = get_id(i)
     name = get_name()
     num_inv = get_num_inv()
-    des = get_des()
+    des = 'NULL'
+    if empty_des > 0:
+        empty_des -= 1
+        des = f"'{get_des()}'"
     price = get_price()
     data_file.write(
-        f"{insert_prefix}'{iden}',N'{name}',{num_inv},'{des}',{price})\n")
+        f"{insert_prefix}'{iden}',N'{name}',{num_inv},{des},{price})\n")
