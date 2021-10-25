@@ -23,7 +23,7 @@ create table KhachHang
 create table HoaDon
 (
 	MaHD char(8),
-	MaKH char(8),
+	MaKH char(7),
 	NgayLap datetime,
 	TongTien int,
 	constraint PK_HD primary key (MaHD)
