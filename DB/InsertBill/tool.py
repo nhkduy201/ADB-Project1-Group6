@@ -17,17 +17,15 @@ def get_date():
 
 
 def writeToScript(bill_id, customer_id, total_bill):
-    i = 0
-    for i in range(5):
-        f = open(f"HoaDon#{i+1}.txt", "w")
-        flag = True
-        while i % 100000 != 0 or flag:
-            index = randint(0, 99999)
-            f.write("INSERT INTO HoaDon (MaHD, MaKH, NgayLap, TongTien) VALUES ")
-            f.write(f"('{bill_id[i]}', '{customer_id[index]}', '{get_date()}', '{total_bill[i]}')\n")
-            i += 1
-            flag = False
-        f.close()
+    f = open("HoaDon.txt", "w")
+    for i in range(500000):
+        index = randint(0, 99999)
+        f.write("INSERT INTO HoaDon (MaHD, MaKH, NgayLap, TongTien) VALUES ")
+        f.write(f"('{bill_id[i]}', '{customer_id[index]}', '{get_date()}', '{total_bill[i]}')\n")
+        if (i+1) % 10000 == 0:
+            f.write("GO\n")
+        i += 1
+    f.close()
 
 
 def readData(total_bill):
@@ -54,7 +52,8 @@ i = 1
 while i <= 500000:
     zero = 6 - len(str(i))
     if i <= 100000:
-        customer_id.append('KH' + '0' * (zero-1) + str(i-1))
+        tmp = 5 - len(str(i-1))
+        customer_id.append('KH' + '0' * tmp + str(i-1))
     bill_id.append('HD' + '0' * zero + str(i))
     total_bill.append(0)
     i += 1
