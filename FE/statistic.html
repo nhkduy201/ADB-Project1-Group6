@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/statistic.css">
     <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
     <title>Bill Management System</title>
 </head>
@@ -23,15 +25,28 @@
     <div id="image"></div>
 
     <div id="content">
-        <h1 class="group-name">ADB2_6</h1>
-        <p class="course">Advanced Database</p>
-        <p class="description">This project is done by following memebers:</p>
-        <ul>
-            <li class="member"><a href="https://www.facebook.com/nhkduy" target="_blank">19127377 - Nguyễn Huỳnh Khánh Duy</a></li>
-            <li class="member"><a href="https://www.facebook.com/profile.php?id=100010990806932" target="_blank">19127431 - Đặng Duy Khang</a></li>
-            <li class="member"><a href="https://www.facebook.com/profile.php?id=100006249288036" target="_blank">19127461 - Trần Thị Thùy Linh</a></li>
-            <li class="member"><a href="https://www.facebook.com/NhuPhuongs" target="_blank">19127521 - Nguyễn Thị Như Phương</a></li>
-        </ul>
+        <form action="/action_page.php">
+            <label for="cars">Choose a month:</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="05/2020">05/2020</option>
+                <option value="06/2020">06/2020</option>
+                <option value="07/2020">07/2020</option>
+                <option value="08/2020">08/2020</option>
+                <option value="09/2020">09/2020</option>
+                <option value="10/2020">10/2020</option>
+                <option value="11/2020">11/2020</option>
+                <option value="12/2020">12/2020</option>
+                <option value="01/2021">01/2021</option>
+                <option value="02/2021">02/2021</option>
+                <option value="03/2021">03/2021</option>
+                <option value="04/2021">04/2021</option>
+                <option value="05/2021">05/2021</option>
+                <option value="06/2021">06/2021</option>
+            </select>
+            <br></br>
+            <input class="btn btn-secondary" type="submit" value="Submit">
+        </form>
     </div>
 
     <div id="footer">
@@ -44,6 +59,7 @@
             <a href=""><i class="ti-linkedin"></i></a>
         </div>
     </div>
+    
 </body>
 
 </html>
