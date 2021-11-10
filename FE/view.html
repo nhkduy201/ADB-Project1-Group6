@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/util.css">
     <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
+
     <title>Bill Management System</title>
 </head>
 
@@ -14,13 +18,43 @@
     <div id="header">
         <ul id="nav">
             <li><a href="./index.html">Homepage</a></li>
-            <li><a href="#">Insert</a></li>
-            <li><a href="#">View</a></li>
-            <li><a href="#">Statistic</a></li>
+            <li><a href="./insert.html">Insert</a></li>
+            <li><a href="./view.html">View</a></li>
+            <li><a href="./statistic.html">Statistic</a></li>
         </ul>
     </div>
 
-    <div id="image"></div>
+    
+    <div class="container-table100">
+        <div class="wrap-table100">
+            <div class="table100 ver1">
+                <div class="table100-head">
+                    <table>
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="cell100 column1">Mã Hoá Đơn</th>
+                                <th class="cell100 column2">Mã Khách Hàng</th>
+                                <th class="cell100 column3">Ngày Lập</th>
+                                <th class="cell100 column4">Tổng Tiền</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+
+                <div class="table100-body js-pscroll">
+                    <table>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='d-flex justify-content-center'>
+        <button type="button" class="btn btn-dark mr-1 prev-btn">Prev</button>
+        <button type="button" class="btn btn-dark ml-1 next-btn">Next</button>
+    </div>
 
     <div id="content">
         <h1 class="group-name">ADB2_6</h1>
@@ -44,6 +78,7 @@
             <a href=""><i class="ti-linkedin"></i></a>
         </div>
     </div>
+    <script src="./js/view.js"></script>
 </body>
 
 </html>
