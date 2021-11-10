@@ -20,5 +20,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^hoadon/([0-9]+)$', views.gethoadon)
+    url(r'^hoadon/([0-9]+)$', views.gethoadon),
+    url(r'^hoadon/', views.posthoadon)
 ]

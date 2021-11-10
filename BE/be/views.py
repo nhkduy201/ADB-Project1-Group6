@@ -19,3 +19,8 @@ def gethoadon(request, page):
   for row in cursor.fetchall():
      results.append(dict(zip(columns, row)))
   return JsonResponse({'hoadons': results})
+
+@csrf_exempt
+def posthoadon(request):
+  print('Raw Data: "%s"' % request.body)
+  return JsonResponse({"msg":"OK"})

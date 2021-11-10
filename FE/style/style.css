@@ -95,3 +95,23 @@ body {
 .next-btn {
   right: 50px;
 }
+
+.away-from-nav {
+  margin-top: 100px;
+}
+
+.w100 {
+  width: 100px;
+}
+
+.remove-chitiet {
+  visibility: hidden;
+}
+
+.add-chitiet + .remove-chitiet {
+  display: none;
+}
+
+.chitiet-row:hover > .remove-chitiet {
+  visibility: visible !important;
+}
