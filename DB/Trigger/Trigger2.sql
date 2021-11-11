@@ -4,7 +4,7 @@
 -------------------------------------------------
 --|   Bảng   |   Thêm   |   Xóa   |      Sửa      |   
 -------------------------------------------------
---|  HoaDon  |    -     |    -    | + (TongTien)  |
+--|  HoaDon  |    +     |    -    | + (TongTien)  |
 -------------------------------------------------
 --| CT_HoaDon|    +     |    +    | + (MaHD,      |
 --|          |          |         |	ThanhTien)  |
@@ -14,12 +14,12 @@ use QLHoaDon
 go
 
 create trigger trg_hoadon_tongtien on HoaDon
-for update
+for insert, update
 as
 begin
-	if exists (
+	if not exists (
 		select * from Inserted I where
-		I.TongTien <> (select sum(ThanhTien) from CT_HoaDon CHD where CHD.MaHD = I.MaHD)
+		I.TongTien = (select isnull(sum(ThanhTien), 0) from CT_HoaDon CHD where CHD.MaHD = I.MaHD)
 	)
 	begin
 		raiserror('Tong tien thay doi khong hop le',16,1)
@@ -34,7 +34,7 @@ for insert, delete, update
 as
 begin
 	update HoaDon 
-	set TongTien = (select sum(ThanhTien) from CT_HoaDon CHD where CHD.MaHD = HoaDon.MaHD)
+	set TongTien = (select isnull(sum(ThanhTien), 0) from CT_HoaDon CHD where CHD.MaHD = HoaDon.MaHD)
 	where MaHD in ((select distinct MaHD from inserted) union (select distinct MaHD from deleted))
 end
 
