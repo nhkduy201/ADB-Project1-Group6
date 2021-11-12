@@ -4,10 +4,12 @@ from django.views.decorators.csrf import csrf_exempt
 import pyodbc
 import json
 
+server_name = 'OLDLAP'  # 'DESKTOP-C8FG3V2\SQLEXPRESS'
+
 
 def get_conn_cursor():
     conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-                          "Server=DESKTOP-C8FG3V2\SQLEXPRESS;"
+                          f"Server={server_name};"
                           "Database=QLHoaDon;"
                           "Trusted_Connection=yes;")
     return (conn, conn.cursor())
@@ -55,7 +57,13 @@ def getRequest(request):
     cursor.execute(
         f"select * from HoaDon where Month(NgayLap) = {month} and Year(NgayLap) = {year}"
     )
-    dictionary = {'mahd': '', 'makh': '', 'ngaylap': '', 'tongtien': '', 'tongdoanhthu': 0}
+    dictionary = {
+        'mahd': '',
+        'makh': '',
+        'ngaylap': '',
+        'tongtien': '',
+        'tongdoanhthu': 0
+    }
     count = 1
     for row in cursor:
         # dictionary[f'mahd{count}'] = row.MaHD
@@ -64,9 +72,10 @@ def getRequest(request):
         # dictionary[f'tongtien{count}'] = row.TongTien
         dictionary['mahd'] += row.MaHD + " "
         dictionary['makh'] += row.MaKH + " "
-        dictionary['ngaylap'] += row.NgayLap.strftime("%Y/%m/%d, %H:%M:%S") + "; "
+        dictionary['ngaylap'] += row.NgayLap.strftime(
+            "%Y/%m/%d, %H:%M:%S") + "; "
         dictionary['tongtien'] += str(row.TongTien) + " "
         dictionary['tongdoanhthu'] += row.TongTien
         count += 1
-    dictionary['soluong'] = count-1
+    dictionary['soluong'] = count - 1
     return render(request, 'statistic_detail.html', dictionary)

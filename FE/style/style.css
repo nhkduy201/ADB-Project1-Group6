@@ -41,14 +41,13 @@ body {
 
 #image {
   margin-top: 46px;
-  padding-top: 50%;
-  background: url(../img/icon.jpg) top center / cover no-repeat;
+  padding-top: 25%;
+  background: url(../img/icon.jpg) top center / contain no-repeat;
 }
 
 #content {
   position: relative;
-  margin-top: 46px;
-  padding: 50px 0;
+  padding: 25px 0;
   text-align: center;
 }
 
@@ -66,7 +65,6 @@ body {
 }
 
 #footer {
-  padding: 64px 16px;
   text-align: center;
 }
 
@@ -121,4 +119,8 @@ button[type="submit"],
 
 .chitiet-row:hover > .remove-chitiet {
   visibility: visible !important;
+}
+
+.statistic-lable {
+  font-size: 20px;
 }

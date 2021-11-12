@@ -4,3 +4,4 @@ FE/fe.code-workspace
 DB/insert_tmp.sql
 BE/.vscode
 DB/.vs
+BE/be/__pycache__

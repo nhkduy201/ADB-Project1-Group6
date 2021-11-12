@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/statistic.css">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css">
     <title>Bill Management System</title>
 </head>
@@ -22,14 +22,15 @@
         </ul>
     </div>
 
-    <div id="image"></div>
+    <!-- <div id="image"></div> -->
 
-    <div id="content">
-        <form action="http://127.0.0.1:8000/statistic_detail/" method="get">
-            <label for="cars">Choose a month:</label>
-            <select class="form-select" aria-label="Default select example" name="month_year">
-                <option selected>Open this select menu</option>
-                <option value="05/2020">05/2020</option>
+    <div class="d-flex justify-content-center align-items-center vh-100 ">
+        <form action="http://127.0.0.1:8000/statistic_detail/" method="get" class="d-flex flex-column align-items-center">
+        <div class="form-group">
+            <label for="month" class="statistic-lable">Choose a month:</label>
+            <select class="form-select form-control" aria-label="Default select example" name="month_year" id="month">
+                <!-- <option selected>Open this select menu</option> -->
+                <option value="05/2020" selected>05/2020</option>
                 <option value="06/2020">06/2020</option>
                 <option value="07/2020">07/2020</option>
                 <option value="08/2020">08/2020</option>
@@ -44,23 +45,10 @@
                 <option value="05/2021">05/2021</option>
                 <option value="06/2021">06/2021</option>
             </select>
-            <br></br>
+        </div> 
             <input class="btn btn-secondary" type="submit" value="Submit">
         </form>
     </div>
-
-    <div id="footer">
-        <div class="socials-list">
-            <a href=""><i class="ti-facebook"></i></a>
-            <a href=""><i class="ti-instagram"></i></a>
-            <a href=""><i class="ti-youtube"></i></a>
-            <a href=""><i class="ti-pinterest"></i></a>
-            <a href=""><i class="ti-twitter"></i></a>
-            <a href=""><i class="ti-linkedin"></i></a>
-        </div>
-    </div>
-    
-    <script src="./js/statistic.js"></script>
 </body>
 
 </html>
