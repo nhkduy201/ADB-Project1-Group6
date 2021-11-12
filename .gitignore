@@ -1,1 +1,6 @@
+.vscode
+BE/be.code-workspace
+FE/fe.code-workspace
+DB/insert_tmp.sql
+BE/.vscode
 DB/.vs

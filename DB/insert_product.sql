@@ -1,3 +1,6 @@
+use QLHoaDon
+go
+
 INSERT INTO SanPham(MaSP, TenSP, SoLuongTon, MoTa, Gia) VALUES ('SP00000',N'Đồ hồ điện tử Des phiên bản thứ X',18,'Dolor tempora quiquia dolore.',28790000)
 INSERT INTO SanPham(MaSP, TenSP, SoLuongTon, MoTa, Gia) VALUES ('SP00001',N'Đồ hồ điện tử Yohji phiên bản thứ X',81,'Dolor amet amet est eius eius ',25590000)
 INSERT INTO SanPham(MaSP, TenSP, SoLuongTon, MoTa, Gia) VALUES ('SP00002',N'Áo lụa Escada phiên bản thứ IX',38,'Ut adipisci velit aliquam nequ',590000)

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bill Management System</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #cac2d0; 
+        }
+    </style>
+</head>
+
+<body>
+  <div class="d-flex flex-column align-items-center text-danger bg-dark">
+    <h1 class="display-4">Quantity: {{soluong}}</h1>
+    <h1 class="display-4">Total: {{tongdoanhthu}}</h1>
+  </div>
+  
+  <table class="table">
+    <thead class="table-secondary text-center">
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">BillID</th>
+        <th scope="col">CustomerID</th>
+        <th scope="col">Date</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody class="text-center" id="table-body"></tbody>
+  </table>
+
+  <div class="d-flex justify-content-around">
+    <button id="prev-btn" type="button" class="btn btn-primary btn-lg">Prev</button>
+    <button id="next-btn" type="button" class="btn btn-success btn-lg">Next</button>
+  </div>
+  
+
+  <script type="text/javascript">
+    var soluong = "{{soluong}}";
+    var mahd = "{{mahd}}";
+    mahd = mahd.split(" ");
+    var makh = "{{makh}}";
+    makh = makh.split(" ");
+    var ngaylap = "{{ngaylap}}";
+    ngaylap = ngaylap.split("; ");
+    var tongtien = "{{tongtien}}";
+    tongtien = tongtien.split(" ");
+    var length = parseInt(soluong);
+    console.log(soluong);
+    var page = 1;
+  
+    function display(page){
+      for (var i = (page-1)*100+1; i <= page*100; i++){
+        if (i > length)
+          break;
+        var html = `<tr>
+                      <th scope="row">${i}</th>
+                      <td>${mahd[i-1]}</td>
+                      <td>${makh[i-1]}</td>
+                      <td>${ngaylap[i-1]}</td>
+                      <td>${tongtien[i-1]}</td>
+                    </tr>`;
+        document.getElementById("table-body").insertRow().innerHTML = html;
+      } 
+    }
+
+    display(page);
+
+    document.addEventListener('DOMContentLoaded',function(){
+      var table = document.getElementById("table-body");
+      var prev_button = document.querySelector("#prev-btn");
+      var next_button = document.querySelector("#next-btn");
+
+      if (prev_button){
+        prev_button.addEventListener("click", (event) => {
+          if (page == 1)
+            alert("This is the first page");
+          else{
+            table.innerHTML = "";
+            page -= 1;
+            display(page);
+          }
+        });
+      }
+      
+      if (next_button){
+        next_button.addEventListener("click", (event) => {
+          if (page*100+1 > length)
+            alert("This is the last page");
+          else{
+            table.innerHTML = "";
+            page += 1;
+            display(page);
+          }
+        });  
+      }
+    });
+    
+  </script>
+</body>
+
+</html>
