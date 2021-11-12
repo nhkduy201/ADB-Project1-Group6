@@ -7,7 +7,7 @@ import json
 
 def get_conn_cursor():
     conn = pyodbc.connect("Driver={SQL Server Native Client 11.0};"
-                          "Server=OLDLAP;"
+                          "Server=DESKTOP-C8FG3V2\SQLEXPRESS;"
                           "Database=QLHoaDon;"
                           "Trusted_Connection=yes;")
     return (conn, conn.cursor())
@@ -43,3 +43,30 @@ def posthoadon(request):
         )
     conn.commit()
     return JsonResponse({"msg": "OK"})
+
+
+@csrf_exempt
+def getRequest(request):
+    results = request.GET.get('month_year')
+    parse = results.split('/')
+    month = int(parse[0])
+    year = int(parse[1])
+    cursor = get_conn_cursor()[1]
+    cursor.execute(
+        f"select * from HoaDon where Month(NgayLap) = {month} and Year(NgayLap) = {year}"
+    )
+    dictionary = {'mahd': '', 'makh': '', 'ngaylap': '', 'tongtien': '', 'tongdoanhthu': 0}
+    count = 1
+    for row in cursor:
+        # dictionary[f'mahd{count}'] = row.MaHD
+        # dictionary[f'makh{count}'] = row.MaKH
+        # dictionary[f'ngaylap{count}'] = row.NgayLap
+        # dictionary[f'tongtien{count}'] = row.TongTien
+        dictionary['mahd'] += row.MaHD + " "
+        dictionary['makh'] += row.MaKH + " "
+        dictionary['ngaylap'] += row.NgayLap.strftime("%Y/%m/%d, %H:%M:%S") + "; "
+        dictionary['tongtien'] += str(row.TongTien) + " "
+        dictionary['tongdoanhthu'] += row.TongTien
+        count += 1
+    dictionary['soluong'] = count-1
+    return render(request, 'statistic_detail.html', dictionary)

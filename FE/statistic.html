@@ -25,9 +25,9 @@
     <div id="image"></div>
 
     <div id="content">
-        <form action="/action_page.php">
+        <form action="http://127.0.0.1:8000/statistic_detail/" method="get">
             <label for="cars">Choose a month:</label>
-            <select class="form-select" aria-label="Default select example">
+            <select class="form-select" aria-label="Default select example" name="month_year">
                 <option selected>Open this select menu</option>
                 <option value="05/2020">05/2020</option>
                 <option value="06/2020">06/2020</option>
@@ -60,6 +60,7 @@
         </div>
     </div>
     
+    <script src="./js/statistic.js"></script>
 </body>
 
 </html>
