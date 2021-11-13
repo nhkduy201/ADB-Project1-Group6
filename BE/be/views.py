@@ -4,7 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 import pyodbc
 import json
 
-server_name = 'OLDLAP'  # 'DESKTOP-C8FG3V2\SQLEXPRESS'
+server_name = 'DESKTOP-C8FG3V2\SQLEXPRESS'#'OLDLAP'  
 
 
 def get_conn_cursor():
