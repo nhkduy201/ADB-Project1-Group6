@@ -2,10 +2,10 @@
 --Phạm vi: CT_HoaDon
 --Bảng tầm ảnh hưởng
 -------------------------------------------------------------
---|   Bảng   |   Thêm   |   Xóa   |      Sửa                |   
+--|   Bảng    |   Thêm   |   Xóa   |      Sửa                |   
 -------------------------------------------------------------
---| CT_HoaDon|    +     |    -    | + (SoLuong, GiaBan      |
---|          |          |         |	GiaGiam, ThanhTien)     |
+--| CT_HoaDon |    +     |    -    | + (SoLuong, GiaBan      |
+--|           |          |         |	GiaGiam, ThanhTien)  |
 -------------------------------------------------------------
 
 use QLHoaDon
