@@ -1,6 +1,21 @@
 use QLHoaDon
 go
 
+--a. Cho danh sách các hoá đơn lập trong năm 2020
+select HD.MaHD, HD.MaKH
+from HoaDon HD
+where YEAR(HD.NgayLap) = 2020
+
+--b. Cho danh sách các khách hàng ở TPHCM
+select KH.MaKH, KH.Ho, KH.Ten
+from KhachHang KH
+where KH.ThanhPho = 'TP.HCM'
+
+--c. Cho danh sách các sản phẩm có giá trong khoảng từ 10tr đến 25tr
+select SP.MaSP, SP.TenSP
+from SanPham SP
+where SP.Gia between 10000000 and 25000000
+
 --d. Cho danh sách các sản phẩm có số lượng tồn <100
 select sp.MaSP,sp.TenSP
 from SanPham sp
