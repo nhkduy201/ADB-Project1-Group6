@@ -11,9 +11,9 @@ where hd.MaHD = ct.MaHD and ct.MaSP = sp.MaSP
 
 --b
 select *
-from HoaDon HD join KhachHang KH
-on HD.MaKH = KH.MaKH
+from SanPham SP join CT_HoaDon CT
+on SP.MaSP = CT.MaSP
 
 select *
-from KhachHang KH join HoaDon HD
-on KH.MaKH = HD.MaKH
+from CT_HoaDon CT join SanPham SP
+on CT.MaSP = SP.MaSP
